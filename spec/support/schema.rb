@@ -5,7 +5,7 @@ when 'mysql', 'mysql2'
   # To test with MySQL: `DB=mysql bundle exec rake spec`
   ActiveRecord::Base.establish_connection(
     adapter:  'mysql2',
-    database: 'active_record_random_test',
+    database: 'random_rails_test',
     username: ENV.fetch("MYSQL_USERNAME") { "root" },
     password: ENV.fetch("MYSQL_PASSWORD") { "" },
     encoding: 'utf8'
@@ -14,7 +14,7 @@ when 'pg', 'postgres', 'postgresql'
   # To test with PostgreSQL: `DB=postgresql bundle exec rake spec`
   ActiveRecord::Base.establish_connection(
     adapter: 'postgresql',
-    database: "active_record_random_test",
+    database: "random_rails_test",
     username: ENV.fetch("DATABASE_USERNAME") { "postgres" },
     password: ENV.fetch("DATABASE_PASSWORD") { "" },
     host: ENV.fetch("DATABASE_HOST") { "localhost" },
@@ -30,7 +30,7 @@ end
 
 # This is just a test app with no sensitive data. In general, end users should
 # explicitly authorize each model, but this shows a way to configure the
-# unrestricted default behavior of an active_record_random gem.
+# unrestricted default behavior of an random-rails gem.
 #
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true

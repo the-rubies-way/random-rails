@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe ActiveRecordRandom::Adapters::ActiveRecord::Base do
+RSpec.describe RandomRails::Adapters::ActiveRecord::Base do
   describe "#random" do
     it { expect(Person).to respond_to(:random) }
     it { expect(Person.random).to be_a(ActiveRecord::Relation) }

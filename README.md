@@ -7,13 +7,13 @@ The most perfomant way to get random records from ActiveRecord. In fact, it's th
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-bundle add active_record_random
+bundle add random-rails
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-gem install active_record_random
+gem install random-rails
 ```
 
 ## Usage
@@ -47,7 +47,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/the-rubies-way/active_record_random. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/the-rubies-way/active_record_random/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/the-rubies-way/random-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/the-rubies-way/random-rails/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -55,4 +55,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the ActiveRecord::Random project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/the-rubies-way/active_record_random/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ActiveRecord::Random project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/the-rubies-way/random-rails/blob/master/CODE_OF_CONDUCT.md).

@@ -1,4 +1,4 @@
-module ActiveRecordRandom
+module RandomRails
   module Adapters
     module ActiveRecord
       module Base
