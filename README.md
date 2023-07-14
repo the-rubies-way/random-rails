@@ -8,7 +8,7 @@ The most perfomant way to get random records from ActiveRecord. In fact, it's th
 
 ## What about performance??
 
-<img width="805" alt="Screenshot 2023-07-15 at 00 41 58" src="https://github.com/the-rubies-way/random-rails/assets/49816584/f19c419a-f4a8-4ceb-95b4-d1f61b78fbd1">
+<img width="805" alt="The perfomance screenshot" src="https://github.com/the-rubies-way/random-rails/assets/49816584/f19c419a-f4a8-4ceb-95b4-d1f61b78fbd1">
 
 ## Installation
 
@@ -64,3 +64,6 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ## Code of Conduct
 
 Everyone interacting in the ActiveRecord::Random project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/the-rubies-way/random-rails/blob/master/CODE_OF_CONDUCT.md).
+
+## Thanks for your support!
+[<img width="100" alt="RailsJazz" src="https://avatars.githubusercontent.com/u/104008706?s=200">](https://github.com/railsjazz)
