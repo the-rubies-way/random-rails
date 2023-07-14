@@ -1,6 +1,6 @@
 [![lint](https://github.com/the-rubies-way/random-rails/actions/workflows/linter.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/linter.yml)
 [![test](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml)
-[![Listed on OpenSource-Heroes.com](https://opensource-heroes.com/badge-v1.svg)](https://opensource-heroes.com/r/loqimean/fake_picture)
+[![Listed on OpenSource-Heroes.com](https://opensource-heroes.com/badge-v1.svg)](https://opensource-heroes.com/r/the-rubies-way/random-rails)
 
 # RandomRails
 
