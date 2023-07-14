@@ -1,3 +1,6 @@
+[![lint](https://github.com/the-rubies-way/random-rails/actions/workflows/linter.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/linter.yml)
+[![test](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml)
+
 # RandomRails
 
 The most perfomant way to get random records from ActiveRecord. In fact, it's the only way to get random records from ActiveRecord. For now it supports only PostgreSQL.
