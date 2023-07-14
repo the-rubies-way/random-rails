@@ -5,6 +5,10 @@
 
 The most perfomant way to get random records from ActiveRecord. In fact, it's the only way to get random records from ActiveRecord. For now, it supports only PostgreSQL.
 
+## What about performance??
+
+<img width="805" alt="Screenshot 2023-07-15 at 00 52 29" src="https://github.com/the-rubies-way/random-rails/assets/49816584/c0464aa6-d303-4ee2-a316-44d4c968b5de">
+
 ## Installation
 
 Install the gem and add it to the application's Gemfile by executing:
