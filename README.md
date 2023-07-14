@@ -3,11 +3,11 @@
 
 # RandomRails
 
-The most perfomant way to get random records from ActiveRecord. In fact, it's the only way to get random records from ActiveRecord. For now it supports only PostgreSQL.
+The most perfomant way to get random records from ActiveRecord. In fact, it's the only way to get random records from ActiveRecord. For now, it supports only PostgreSQL.
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
+Install the gem and add it to the application's Gemfile by executing:
 
 ```bash
 bundle add random-rails
@@ -28,7 +28,7 @@ User.random
 # => [#<User id: 1, name: "John", ...>]
 ```
 
-You can also pass precision to `random` method:
+You can also pass precision to a `random` method:
 
 ```ruby
 User.random(0.1)
