@@ -1,0 +1,22 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+require:
+  - standard/cop/block_single_line_braces
+  - standard
+  - rubocop-performance
+
+inherit_gem:
+  standard: config/base.yml
+  standard-performance: config/base.yml
+  standard-custom: config/base.yml
+
+inherit_from:
+  - .rubocop/rspec.yml
+  - .rubocop/strict.yml
+  - .rubocop/custom.yml
+
+AllCops:
+  SuggestExtensions: false
+  NewCops: disable
