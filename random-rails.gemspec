@@ -4,30 +4,30 @@ $:.push File.expand_path("../lib", __FILE__)
 require "random-rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "random-rails"
+  spec.name    = "random-rails"
   spec.version = RandomRails::VERSION
   spec.authors = ["loqimean"]
-  spec.email = ["vanuha277@gmail.com"]
+  spec.email   = ["vanuha277@gmail.com"]
 
-  spec.summary = "Awesome gem to get random records from database."
-  spec.description = "The easiest way to get random records from database with best performance that you ever seen."
-  spec.homepage = "https://github.com/the-rubies-way/random-rails"
-  spec.license = "MIT"
+  spec.summary               = "Awesome gem to get random records from database."
+  spec.description           = "The easiest way to get random records from database with best performance that you ever seen."
+  spec.homepage              = "https://github.com/the-rubies-way/random-rails"
+  spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["homepage_uri"] = spec.homepage
+  spec.metadata["homepage_uri"]    = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
-  spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/master/CHANGELOG.md"
+  spec.metadata["changelog_uri"]   = "#{spec.homepage}/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files = Dir.chdir(__dir__) do
+  spec.files         = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject do |f|
-      (File.expand_path(f) == __FILE__) || f.start_with?(*%w[bin/ test/ spec/ features/ .git .circleci appveyor])
+      (File.expand_path(f) == __FILE__) || f.start_with?("bin/", "test/", "spec/", "features/", ".git", ".circleci", "appveyor")
     end
   end
-  spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  spec.bindir        = "exe"
+  spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
   # **********************************

@@ -20,3 +20,8 @@ inherit_from:
 AllCops:
   SuggestExtensions: false
   NewCops: disable
+
+Layout/SpaceAroundOperators:
+  Enabled: true
+  Exclude:
+    - random-rails.gemspec

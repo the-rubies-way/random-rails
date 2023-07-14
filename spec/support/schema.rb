@@ -1,30 +1,30 @@
 require "active_record"
 
-case ENV['DB'].try(:downcase)
-when 'mysql', 'mysql2'
+case ENV["DB"].try(:downcase)
+when "mysql", "mysql2"
   # To test with MySQL: `DB=mysql bundle exec rake spec`
   ActiveRecord::Base.establish_connection(
-    adapter:  'mysql2',
-    database: 'random_rails_test',
+    adapter: "mysql2",
+    database: "random_rails_test",
     username: ENV.fetch("MYSQL_USERNAME") { "root" },
     password: ENV.fetch("MYSQL_PASSWORD") { "" },
-    encoding: 'utf8'
+    encoding: "utf8"
   )
-when 'pg', 'postgres', 'postgresql'
+when "pg", "postgres", "postgresql"
   # To test with PostgreSQL: `DB=postgresql bundle exec rake spec`
   ActiveRecord::Base.establish_connection(
-    adapter: 'postgresql',
+    adapter: "postgresql",
     database: "random_rails_test",
     username: ENV.fetch("DATABASE_USERNAME") { "postgres" },
     password: ENV.fetch("DATABASE_PASSWORD") { "" },
     host: ENV.fetch("DATABASE_HOST") { "localhost" },
-    min_messages: 'warning'
+    min_messages: "warning"
   )
 else
   # Otherwise, assume SQLite3: `bundle exec rake spec`
   ActiveRecord::Base.establish_connection(
     adapter: "sqlite3",
-    database: ':memory:'
+    database: ":memory:"
   )
 end
 
