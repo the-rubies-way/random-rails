@@ -1,17 +1,17 @@
 # frozen_string_literal: true
 
 $:.push File.expand_path("../lib", __FILE__)
-require "active_record_random/version"
+require "random-rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "active_record_random"
-  spec.version = ActiveRecordRandom::VERSION
+  spec.name = "random-rails"
+  spec.version = RandomRails::VERSION
   spec.authors = ["loqimean"]
   spec.email = ["vanuha277@gmail.com"]
 
   spec.summary = "Awesome gem to get random records from database."
   spec.description = "The easiest way to get random records from database with best performance that you ever seen."
-  spec.homepage = "https://github.com/the-rubies-way/active_record_random"
+  spec.homepage = "https://github.com/the-rubies-way/random-rails"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 

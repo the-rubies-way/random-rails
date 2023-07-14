@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    active_record_random (0.1.0)
+    random-rails (0.1.0)
       activerecord (>= 4.0)
       activesupport (>= 6.1.5)
 
@@ -110,12 +110,12 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  active_record_random!
   faker (~> 3.2)
   mysql2 (~> 0.5.5)
   pg (~> 1.5)
   pry (~> 0.14.2)
   rake (~> 13.0)
+  random-rails!
   rspec (~> 3.0)
   rubocop (~> 1.52)
   rubocop-performance (~> 1.18)

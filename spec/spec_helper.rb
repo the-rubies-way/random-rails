@@ -7,7 +7,7 @@ SimpleCov.start
 SimpleCov.minimum_coverage 100
 SimpleCov.add_filter "/spec/"
 
-require "active_record_random"
+require "random-rails"
 
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].sort.each { |f| require f }
 
