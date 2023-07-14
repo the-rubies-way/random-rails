@@ -1,4 +1,4 @@
-# ActiveRecord::Random
+# RandomRails
 
 The most perfomant way to get random records from ActiveRecord. In fact, it's the only way to get random records from ActiveRecord. For now it supports only PostgreSQL.
 
