@@ -24,7 +24,8 @@ else
   # Otherwise, assume SQLite3: `bundle exec rake spec`
   ActiveRecord::Base.establish_connection(
     adapter: "sqlite3",
-    database: ":memory:"
+    # database: ":memory:"
+    database: "random_rails_test.sqlite3"
   )
 end
 

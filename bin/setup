@@ -9,19 +9,9 @@ set -vx
 # PostgreSQL
 if [ -x "$(command -v psql)" ]; then
   echo "PostgreSQL is installed"
-  psql -h localhost -p 5432 -W postgres -c 'create database random_rails_test;' -U postgres;
-else
-  echo "PostgreSQL is not installed"
-  # check it is mac or linux
-  if [ "$(uname)" == "Darwin" ]; then
-    brew install postgresql
-  elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    sudo apt-get install postgresql postgresql-contrib
-  fi
-
-  # create psql user
-  sudo -u postgres createuser -s $(whoami)
   psql -h localhost -p 5432 -W postgres -c 'create database random_rails_test;' -U $(whoami);
+else
+  echo "PostgreSQL is not installed!"
 
   exit 1
 fi
@@ -31,19 +21,12 @@ if [ -x "$(command -v mysql)" ]; then
   echo "MySQL is installed"
   mysql -h localhost -P 3306 -u root -e 'create database random_rails_test;'
 else
-  echo "MySQL is not installed"
-  # check it is mac or linux
-  if [ "$(uname)" == "Darwin" ]; then
-    brew install gcc zstd openssl mysql
-  elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    sudo apt-get install mysql-server mysql-client libmysqlclient-dev
-  fi
-
-  # create mysql user
-  mysql -h localhost -P 3306 -u root -e 'create database random_rails_test;'
+  echo "MySQL is not installed!"
 
   exit 1
 fi
+
+# add sqlite
 
 bundle install
 DB=pg bundle exec rspec
