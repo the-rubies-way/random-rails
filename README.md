@@ -153,4 +153,4 @@ Everyone interacting in the ActiveRecord::Random project's codebases, issue trac
 
 ## Thanks for your support!
 
-[`<img width="100" alt="RailsJazz" src="https://avatars.githubusercontent.com/u/104008706?s=200">`](https://github.com/railsjazz)
+[<img width="100" alt="RailsJazz" src="https://avatars.githubusercontent.com/u/104008706?s=200">](https://github.com/railsjazz)
