@@ -24,7 +24,7 @@ module RandomRails
           end
 
           # Return single object for count=1, relation for count>1
-          count == 1 ? relation.take : relation
+          (count == 1) ? relation.take : relation
         end
 
         private
@@ -45,7 +45,7 @@ module RandomRails
             # PostgreSQL supports TABLESAMPLE for large tables, offset for smaller ones
             estimated_count = estimate_table_size
 
-            estimated_count > RandomRails.configuration.tablesample_threshold ? :tablesample : :offset
+            (estimated_count > RandomRails.configuration.tablesample_threshold) ? :tablesample : :offset
           when "mysql", "mysql2"
             # MySQL doesn't have TABLESAMPLE, use offset method
             :offset
@@ -62,7 +62,8 @@ module RandomRails
         def tablesample_random(precision:, count:)
           if connection.adapter_name.downcase == "postgresql"
             # Use configured precision if not specified
-            precision = RandomRails.configuration.precision if precision == 1.0
+            # using Float::EPSILON to avoid floating point precision issues
+            precision = RandomRails.configuration.precision if (precision - 1.0).abs < Float::EPSILON
 
             from("#{table_name} TABLESAMPLE BERNOULLI(#{precision})").limit(count)
           else
@@ -78,8 +79,8 @@ module RandomRails
           return limit(count) if total_count == 0
 
           # Generate random offset, ensuring we always have an offset clause
-          max_offset = [total_count - count, 0].max
-          random_offset = max_offset > 0 ? rand(max_offset + 1) : 0
+          max_offset    = [total_count - count, 0].max
+          random_offset = (max_offset > 0) ? rand(max_offset + 1) : 0
 
           # Always apply offset, even if it's 0, to ensure consistent SQL structure
           offset(random_offset).limit(count)
@@ -101,8 +102,6 @@ module RandomRails
 
         # Estimate table size efficiently
         def estimate_table_size
-          cache_key = "#{table_name}_count_estimate"
-
           if RandomRails.configuration.cache_table_sizes && @estimated_count
             return @estimated_count
           end
@@ -111,13 +110,13 @@ module RandomRails
             case connection.adapter_name.downcase
             when "postgresql", "pg"
               # Use pg_class for fast estimate
-              sql = "SELECT reltuples::INTEGER FROM pg_class WHERE relname = '#{table_name}'"
+              sql    = "SELECT reltuples::INTEGER FROM pg_class WHERE relname = '#{table_name}'"
               result = connection.execute(sql).first
 
               result ? result["reltuples"].to_i : count
             when "mysql", "mysql2"
               # Use information_schema for fast estimate
-              sql = "SELECT table_rows FROM information_schema.tables WHERE table_name = '#{table_name}'"
+              sql    = "SELECT table_rows FROM information_schema.tables WHERE table_name = '#{table_name}'"
               result = connection.execute(sql).first
 
               result ? result[0].to_i : count

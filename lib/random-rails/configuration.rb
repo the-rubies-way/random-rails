@@ -5,10 +5,10 @@ module RandomRails
     attr_accessor :default_strategy, :tablesample_threshold, :cache_table_sizes, :precision
 
     def initialize
-      @default_strategy = :auto
+      @default_strategy      = :auto
       @tablesample_threshold = 10_000 # Use TABLESAMPLE for tables larger than this
-      @cache_table_sizes = true # Cache table size estimates
-      @precision = 1.0 # Default precision for TABLESAMPLE
+      @cache_table_sizes     = true # Cache table size estimates
+      @precision             = 1.0 # Default precision for TABLESAMPLE
     end
   end
 

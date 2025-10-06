@@ -93,7 +93,7 @@ RSpec.describe RandomRails::Configuration do
 
     before do
       RandomRails.configure do |config|
-        config.default_strategy = custom_strategy
+        config.default_strategy      = custom_strategy
         config.tablesample_threshold = custom_threshold
       end
     end

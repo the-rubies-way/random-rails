@@ -3,6 +3,7 @@
 RSpec.describe RandomRails::Adapters::ActiveRecord::Base do
   let(:adapter_name) { ActiveRecord::Base.connection.adapter_name.downcase }
   subject(:random_person) { Person.random }
+
   let(:random_person_count_1) { Person.random(count: 1) }
   let(:random_person_count_5) { Person.random(count: 5) }
   let(:random_person_count_2) { Person.random(count: 2) }
@@ -167,7 +168,7 @@ RSpec.describe RandomRails::Adapters::ActiveRecord::Base do
       end
 
       it "uses configured precision" do
-        if adapter_name == 'postgresql'
+        if adapter_name == "postgresql"
           expect(Person.random(count: 2, strategy: :tablesample).to_sql).to include("TABLESAMPLE BERNOULLI(2.5)")
         end
       end

@@ -14,7 +14,7 @@ RSpec.describe "Database Adapter Integration" do
 
     context "when estimating table size using pg_class" do
       before do
-        allow(ActiveRecord::Base.connection).to receive(:execute).and_return([{ 'reltuples' => '1000' }])
+        allow(ActiveRecord::Base.connection).to receive(:execute).and_return([{ "reltuples" => "1000" }])
       end
 
       it "returns an integer" do

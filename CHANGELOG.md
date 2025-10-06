@@ -1,3 +1,32 @@
+## [1.0.2] - 2025-10-06
+
+### Maintenance Release - Code Quality & CI Improvements
+
+#### Fixed
+
+- **Floating-point precision bug**: Replaced direct float equality comparison (`precision == 1.0`) with epsilon-based comparison (`(precision - 1.0).abs < Float::EPSILON`) to avoid floating-point precision issues
+- **Code formatting**: Improved code consistency and readability with proper parentheses around ternary operators and aligned variable assignments
+
+#### Added
+
+- **Enhanced test matrix**: Added Ruby 3.2.9, 3.3.9, and Rails 8.0.3 to CI test matrix for better compatibility testing
+- **Improved .gitignore**: Added missing `*.gem` pattern to prevent accidental gem file commits
+
+#### Changed
+
+- **Code style improvements**:
+  - Added parentheses around ternary operator conditions for better readability
+  - Aligned variable assignments for consistent formatting
+  - Updated string quotations to use double quotes consistently in specs
+  - Removed unused `cache_key` variable
+  - Added missing blank lines for better code organization
+
+#### Technical Improvements
+
+- Better floating-point comparison to prevent precision-related bugs
+- More robust code style following Ruby best practices
+- Enhanced CI coverage with additional Ruby and Rails versions
+
 ## [1.0.1] - 2025-09-30
 
 ### Major Release - Multi-Database Support & Performance Optimizations
