@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     random-rails (1.0.0)
-      activerecord (>= 4.0)
-      activesupport (>= 6.1.5)
+      activerecord (>= 4.0, < 8.1)
+      activesupport (>= 6.1.5, < 8.1)
 
 GEM
   remote: https://rubygems.org/
