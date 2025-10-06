@@ -5,8 +5,6 @@ inherit_mode:
 require:
   - standard/cop/block_single_line_braces
   - standard
-
-plugins:
   - rubocop-performance
 
 inherit_gem:
