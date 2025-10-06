@@ -35,9 +35,9 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "activesupport", ">= 6.1.5", "< 8.1"
 
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rubocop-rspec", "~> 2.22"
-  spec.add_development_dependency "standard", "~> 1.3"
-  spec.add_development_dependency "rubocop", "~> 1.52"
+  spec.add_development_dependency "rubocop-rspec", "~> 3.7"
+  spec.add_development_dependency "standard", "~> 1.51"
+  spec.add_development_dependency "rubocop", "~> 1.80"
   spec.add_development_dependency "rubocop-performance", "~> 1.18"
   spec.add_development_dependency "simplecov", "~> 0.22.0"
   spec.add_development_dependency "pry", "~> 0.14.2"
@@ -45,6 +45,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pg", "~> 1.5"
   spec.add_development_dependency "mysql2", "~> 0.5.5"
   spec.add_development_dependency "faker", "~> 3.2"
+  spec.add_development_dependency "mutex_m"
+  spec.add_development_dependency "bigdecimal"
 
   spec.post_install_message = <<~MSG
 

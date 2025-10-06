@@ -965,7 +965,7 @@ RSpec.describe RandomRails::Adapters::ActiveRecord::Base do
             .with(/SELECT reltuples::INTEGER FROM pg_class WHERE relname = /)
             .and_return([{ "reltuples" => "10" }])
 
-          first_call = estimated_size
+          first_call  = estimated_size
           second_call = estimated_size
 
           expect(first_call).to eq(second_call)

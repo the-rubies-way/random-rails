@@ -1,3 +1,27 @@
+## [1.0.3] - 2025-10-07
+
+### Maintenance Release - RuboCop & Dependency Updates
+
+#### Fixed
+
+- **RuboCop configuration**: Fixed configuration syntax by replacing `require:` with `plugins:` in RuboCop configuration files to follow the correct plugin loading mechanism
+- **ActiveSupport loading**: Optimized ActiveSupport loading by using `lazy_load_hooks` instead of loading the entire core extensions
+
+#### Changed
+
+- **Dependency updates**:
+  - Updated RuboCop from ~> 1.52 to ~> 1.80
+  - Updated Standard from ~> 1.3 to ~> 1.51
+  - Updated rubocop-rspec from ~> 2.22 to ~> 3.7
+  - Updated rubocop-performance to ~> 1.25.0
+  - Added mutex_m and bigdecimal as development dependencies
+
+#### Technical Improvements
+
+- Improved RuboCop plugin configuration for better linting
+- More efficient ActiveSupport loading to reduce memory footprint
+- Updated development tooling for better code quality enforcement
+
 ## [1.0.2] - 2025-10-06
 
 ### Maintenance Release - Code Quality & CI Improvements
