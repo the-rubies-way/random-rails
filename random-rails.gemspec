@@ -46,4 +46,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pg", "~> 1.5"
   spec.add_development_dependency "mysql2", "~> 0.5.5"
   spec.add_development_dependency "faker", "~> 3.2"
+
+  spec.post_install_message = <<~MSG
+    Thanks for installing random-rails!
+    You can see usage examples in:
+      https://github.com/the-rubies-way/random-rails#examples
+  MSG
 end

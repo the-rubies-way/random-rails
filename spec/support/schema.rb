@@ -8,6 +8,7 @@ when "mysql", "mysql2"
     database: "random_rails_test",
     username: ENV.fetch("MYSQL_USERNAME") { "root" },
     password: ENV.fetch("MYSQL_PASSWORD") { "" },
+    host: ENV.fetch("MYSQL_HOST") { "127.0.0.1" },
     encoding: "utf8"
   )
 when "pg", "postgres", "postgresql"
