@@ -130,7 +130,7 @@ DEPENDENCIES
   rubocop-rspec (~> 3.7)
   simplecov (~> 0.22.0)
   sqlite3 (~> 1.6)
-  standard (~> 1.51)
+  standard (~> 1.37)
 
 BUNDLED WITH
    2.4.13
