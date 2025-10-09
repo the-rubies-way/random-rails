@@ -2,6 +2,10 @@
 [![test](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml)
 [![Gem Version](https://img.shields.io/gem/v/random-rails)](https://rubygems.org/gems/random-rails)
 
+<p align="center">
+  <img width="600" height="600" alt="Image Oct 9, 2025, 04_30_33" src="https://github.com/user-attachments/assets/cc522bff-2de6-41f3-b458-83867bf70b26" />
+</p>
+  
 # RandomRails
 
 🚀 The most performant way to get random records from ActiveRecord. Supports **PostgreSQL**, **MySQL**, and **SQLite** with intelligent strategy selection to replace slow `ORDER BY RANDOM()` queries.
