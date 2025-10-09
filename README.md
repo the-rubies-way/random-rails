@@ -1,5 +1,6 @@
 [![lint](https://github.com/the-rubies-way/random-rails/actions/workflows/linter.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/linter.yml)
 [![test](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml/badge.svg)](https://github.com/the-rubies-way/random-rails/actions/workflows/test.yml)
+[![Gem Version](https://img.shields.io/gem/v/random-rails)](https://rubygems.org/gems/random-rails)
 
 # RandomRails
 
