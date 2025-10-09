@@ -26,6 +26,9 @@ Real-world benchmark results comparing RandomRails with traditional methods (10 
 | 100,000 users   | 31.578s               | **3.6968s** | 369.4334s         | **8.54x faster**  |
 | 1,000,000 users | 171.497s              | **5.3441s** | 373.6102s         | **32.09x faster** |
 
+<img width="1968" height="1180" alt="image" src="https://github.com/user-attachments/assets/3c395cfd-d28f-45d1-92f2-872075552782" />
+
+
 **Key Takeaways:**
 
 - RandomRails consistently outperforms `ORDER BY RANDOM()` by 2-32x
