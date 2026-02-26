@@ -1,3 +1,10 @@
+## [1.0.4] - 2026-02-26
+
+### Maintenance Release - Removed versions lock for rails 8.1 and higher
+
+- Removed lock on rails 8.0 and lower for `activerecord`, now it's available for all versions of rails
+- Removed lock on rails 8.0 and lower for activesupport, now it's available for all versions of rails
+
 ## [1.0.3] - 2025-10-07
 
 ### Maintenance Release - RuboCop & Dependency Updates

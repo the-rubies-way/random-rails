@@ -31,8 +31,8 @@ Gem::Specification.new do |spec|
 
   # **********************************
   # * Dependencies
-  spec.add_runtime_dependency "activerecord", ">= 4.0", "< 8.1"
-  spec.add_runtime_dependency "activesupport", ">= 6.1.5", "< 8.1"
+  spec.add_runtime_dependency "activerecord", ">= 4.0"
+  spec.add_runtime_dependency "activesupport", ">= 6.1.5"
 
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop-rspec", "~> 3.0.0"
