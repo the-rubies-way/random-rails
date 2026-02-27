@@ -146,6 +146,9 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## To Do
+- [ ] emitting a warning here random-rails/lib/random-rails/adapters/active_record/base.rb at 85111c60ad4200adad4a7f8056cde0903055fa25 Because if someone is requesting a strategy that’s not actually used (because they’re not using postgres) then something is happening they didn’t expect.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/the-rubies-way/random-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/the-rubies-way/random-rails/blob/master/CODE_OF_CONDUCT.md).
