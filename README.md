@@ -5,7 +5,7 @@
 <p align="center">
   <img width="600" height="600" alt="Image Oct 9, 2025, 04_30_33" src="https://github.com/user-attachments/assets/cc522bff-2de6-41f3-b458-83867bf70b26" />
 </p>
-  
+
 # RandomRails
 
 🚀 The most performant way to get random records from ActiveRecord. Supports **PostgreSQL**, **MySQL**, and **SQLite** with intelligent strategy selection to replace slow `ORDER BY RANDOM()` queries.
@@ -152,6 +152,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/the-rubies-way/random-rails. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/the-rubies-way/random-rails/blob/master/CODE_OF_CONDUCT.md).
+
+### To Do
+- [ ] Add a warning when a strategy is not used because the database is not PostgreSQL
+- [ ] Add an ability to get unlimited number of records, something like `User.random(count: :unlimited)`
 
 ## License
 
